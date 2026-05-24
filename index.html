@@ -1,0 +1,46 @@
+<script>
+
+alert('Hola, me llamo Abner.');
+alert('Hagamos algunas operaciones.');
+
+/*linea que permite escribir*/
+document.write ('Hola me llamo Abner.');//escribo texto hola
+document.write('<br>');//escribo una etiqueta html de salto de linea en el texto (retorno de carro).
+
+document.write('Este es mi primer programa con Javascript en este curso.');
+document.write ('<br>') ;
+document.write('<br>') ;
+document.write ("Puedes refrescar la página para insertar nuevos datos para realizar nuevamente las operaciones.");
+document.write('<br>') ;
+document.write('<br>') ;
+
+/*creo variables*/
+var basetriangulo;
+var alturatriangulo;
+var ladocuadrado;
+
+/*pido datos en un dialogo del explorador*/
+basetriangulo=prompt ('Dame la base del triangulo:','');//pido base triangulo
+alturatriangulo=prompt ('Dame la altura del triangulo:', '');//pido altura triangulo
+ladocuadrado=prompt ('Dame el lado del cuadrado:','');//pido lado cuadrado
+
+/*convierto valores a valores numericos para poder hacer operaciones*/
+basetriangulo=parseInt (basetriangulo);
+alturatriangulo=parseInt (alturatriangulo) ;
+ladocuadrado=parseInt (ladocuadrado) ;
+
+/*hago operaciones*/
+//hago calculo del perimetro del triangulo
+var perimetrocuadrado=ladocuadrado + ladocuadrado + ladocuadrado + ladocuadrado;
+//hago calculo del area del triangulo
+var areatriangulo=( (basetriangulo * alturatriangulo) / 2);
+
+/*escribo resultados*/
+document.write('El area del triangulo es: ');
+document.write (areatriangulo) ;
+document.write('<br>') ;
+document.write('<br>');
+document.write('El perimetro del cuadrado es: ');
+document.write (perimetrocuadrado) ;
+
+</script>
